@@ -102,23 +102,33 @@ export const Sidebar: React.FC = () => {
   const renderContent = () => (
     <div className="flex flex-col h-full bg-white text-slate-900 border-r border-slate-200">
       
+      {/* Brand & Logo Header */}
+      <div className="p-4 border-b border-slate-200 flex items-center justify-between bg-white">
+        <div className="flex items-center gap-3">
+          <img src="/logos.png" alt={APP_CONFIG.COMPANY_NAME} className="w-9 h-9 rounded-lg object-contain bg-white border border-slate-200 p-0.5 shadow-xs" />
+          <div className="overflow-hidden">
+            <h2 className="text-sm font-bold text-slate-900 leading-tight truncate">{APP_CONFIG.COMPANY_NAME}</h2>
+            <p className="text-[10px] font-medium text-slate-500 truncate">{APP_CONFIG.COMPANY_TAGLINE}</p>
+          </div>
+        </div>
+        {isMobileDrawerOpen && (
+          <button
+            onClick={() => setIsMobileDrawerOpen(false)}
+            className="md:hidden p-1 rounded-lg text-slate-500 hover:bg-slate-200 cursor-pointer shrink-0"
+            aria-label="Tutup Menu"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        )}
+      </div>
+
       {/* Current User Role Header */}
       <div className="p-4 border-b border-slate-200 bg-slate-50/70">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-blue-600" />
-            <span className="text-xs font-bold uppercase text-slate-700 tracking-wider">
-              {currentAdmin.role}
-            </span>
-          </div>
-          {isMobileDrawerOpen && (
-            <button
-              onClick={() => setIsMobileDrawerOpen(false)}
-              className="md:hidden p-1 rounded-lg text-slate-500 hover:bg-slate-200 cursor-pointer"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          )}
+        <div className="flex items-center gap-2">
+          <ShieldCheck className="w-4 h-4 text-blue-600" />
+          <span className="text-xs font-bold uppercase text-slate-700 tracking-wider">
+            {currentAdmin.role}
+          </span>
         </div>
         <p className="text-xs text-slate-500 mt-1 font-medium">
           {currentAdmin.role === 'Owner' 

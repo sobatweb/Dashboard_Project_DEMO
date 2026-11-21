@@ -4,14 +4,13 @@
  */
 export const APP_CONFIG = {
   // Ganti string kosong ini dengan URL Apps Script Anda jika ingin di-hardcode:
-  // Contoh: 'https://script.google.com/macros/s/AKfycby.../exec'
-  APPS_SCRIPT_URL:'https://script.google.com/macros/s/AKfycbzZvzqiFNfw0UNVfm1RskHOTDuZQvhsRt7b00ByH2C5Txj9Tio_n0cE4VovsiBUp4ArCA/exec',
+  APPS_SCRIPT_URL:'https://script.google.com/macros/s/AKfycbza8cV3d-v6Q4rYzdN07MpLoDJM2YIW9c5BTq-KXVbvez_7OIDZ4cgIlX9qP7c1Bg1csQ/exec',
 
   // Identitas Resmi Perusahaan
   COMPANY_NAME: 'PT. Asa Karoseri',
   COMPANY_TAGLINE: 'Industry & Spesialis Karoseri Khusus Kendaraan',
   COMPANY_ADDRESS: 'Jl. Raya Serang Km 14 No. 88, Cikupa, Tangerang, Banten 15710',
-  COMPANY_PHONE: '021-5968899 / 0812-9876-5432',
+  COMPANY_PHONE: '021-5968899 / 0812-0000-0001',
   COMPANY_EMAIL: 'info@asakaroseri.com',
   COMPANY_WEBSITE: 'www.asakaroseri.com',
 
@@ -26,8 +25,8 @@ export const APP_CONFIG = {
   BANK_ACCOUNT_NAME_ALT: 'PT Asa Karoseri',
 
   // Penandatangan Dokumen Resmi
-  DIRECTOR_NAME: 'Ir. Hendra Pratama',
+  DIRECTOR_NAME: 'Admin A',
   DIRECTOR_TITLE: 'Direktur Utama',
-  COMMISSIONER_NAME: 'Hj. Nur Hasanah',
+  COMMISSIONER_NAME: 'Admin B',
   COMMISSIONER_TITLE: 'Komisaris Utama'
 };

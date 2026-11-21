@@ -21,7 +21,7 @@ export const PrintableDocument: React.FC = () => {
     } else if (Array.isArray(data.items_json)) {
       items = data.items_json;
     }
-  } catch (e) {
+  } catch {
     items = [];
   }
 
@@ -76,9 +76,11 @@ export const PrintableDocument: React.FC = () => {
         <div className="border-b-2 border-slate-900 pb-4 mb-6">
           <div className="flex items-start gap-4">
             {/* Logo Brand ASA */}
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-slate-900 text-white font-black text-xl sm:text-2xl flex items-center justify-center border border-slate-800 shrink-0">
-              ASA
-            </div>
+            <img 
+              src="/logos.png" 
+              alt={APP_CONFIG.COMPANY_NAME} 
+              className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-contain border border-slate-200 p-1 bg-white shrink-0 shadow-xs" 
+            />
             <div className="flex-1">
               <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-tight">
                 {APP_CONFIG.COMPANY_NAME}

@@ -279,22 +279,22 @@ function initSheets() {
   setupSheet(ss, 'Mutasi_Stok', [
     'id', 'tanggal', 'kode_barang', 'nama_barang', 'jenis_mutasi', 'jumlah', 'keterangan', 'pj_admin'
   ], [
-    ['MUT-001', '2026-11-01', 'PLT-001', 'Plat Stainless Steel 304', 'Masuk', 25, 'Pengadaan Plat SS Supplier PT Metal', 'Ahmad Fauzi'],
-    ['MUT-002', '2026-11-05', 'PLT-001', 'Plat Stainless Steel 304', 'Terpakai', 4, 'Produksi Ambulance Wuling EV (Pak Gerry)', 'Budi Santoso'],
-    ['MUT-003', '2026-11-06', 'BSI-001', 'Besi Hollow Galvanis 40x40', 'Terpakai', 12, 'Rangka Plafon & Partisi Ambulance', 'Budi Santoso'],
-    ['MUT-004', '2026-11-10', 'MED-001', 'Rotary Lightbar Strobo LED', 'Terpakai', 1, 'Pemasangan Strobo Ambulance Wuling EV', 'Budi Santoso']
+    ['MUT-001', '2026-11-01', 'PLT-001', 'Plat Stainless Steel 304', 'Masuk', 25, 'Pengadaan Plat SS Supplier PT Metal', 'Admin C'],
+    ['MUT-002', '2026-11-05', 'PLT-001', 'Plat Stainless Steel 304', 'Terpakai', 4, 'Produksi Ambulance Wuling EV (Pak Gerry)', 'Admin D'],
+    ['MUT-003', '2026-11-06', 'BSI-001', 'Besi Hollow Galvanis 40x40', 'Terpakai', 12, 'Rangka Plafon & Partisi Ambulance', 'Admin D'],
+    ['MUT-004', '2026-11-10', 'MED-001', 'Rotary Lightbar Strobo LED', 'Terpakai', 1, 'Pemasangan Strobo Ambulance Wuling EV', 'Admin D']
   ]);
 
   // 3. GENERAL LEDGER (ACCURATE FORMAT - KAS & BANK BCA 8820917881)
   setupSheet(ss, 'General_Ledger', [
     'id_transaksi', 'tanggal', 'kategori', 'deskripsi', 'kas_masuk', 'kas_keluar', 'saldo', 'bukti_nota', 'pic_admin'
   ], [
-    ['TRX-001', '2026-11-01', 'Modal Awal', 'Saldo Awal Bank BCA (1200-00-010)', 50000000, 0, 50000000, 'BCA-AWAL', 'Suhadi'],
-    ['TRX-002', '2026-11-02', 'Kas Kecil', 'Pengisian Kas Kecil Workshop (1100-00-010)', 0, 5000000, 45000000, 'TRANS-01', 'Ahmad Fauzi'],
-    ['TRX-003', '2026-11-04', 'Pendapatan Usaha', 'DP 50% Karoseri Ambulance Wuling Mitra EV (Pak Gerry)', 38850000, 0, 83850000, 'INV-RAN-2026-001', 'Maya Kartika'],
-    ['TRX-004', '2026-11-07', 'Beli Material', 'Pembelian Plat SS 304 & Besi Hollow Rangka', 0, 18500000, 65350000, 'NOTA-SUP-01', 'Ahmad Fauzi'],
-    ['TRX-005', '2026-11-10', 'Beli Material Medis', 'Pembelian Lightbar Strobo & Stretcher Ambulance', 0, 21000000, 44350000, 'NOTA-MED-04', 'Budi Santoso'],
-    ['TRX-006', '2026-11-15', 'Upah Tenaga Kerja', 'Upah Mingguan Welder & Teknisi Karoseri', 0, 8500000, 35850000, 'SLIP-UPAH-W2', 'Budi Santoso']
+    ['TRX-001', '2026-11-01', 'Modal Awal', 'Saldo Awal Bank BCA (1200-00-010)', 50000000, 0, 50000000, 'BCA-AWAL', 'Admin A'],
+    ['TRX-002', '2026-11-02', 'Kas Kecil', 'Pengisian Kas Kecil Workshop (1100-00-010)', 0, 5000000, 45000000, 'TRANS-01', 'Admin C'],
+    ['TRX-003', '2026-11-04', 'Pendapatan Usaha', 'DP 50% Karoseri Ambulance Wuling Mitra EV (Pak Gerry)', 38850000, 0, 83850000, 'INV-RAN-2026-001', 'Admin E'],
+    ['TRX-004', '2026-11-07', 'Beli Material', 'Pembelian Plat SS 304 & Besi Hollow Rangka', 0, 18500000, 65350000, 'NOTA-SUP-01', 'Admin C'],
+    ['TRX-005', '2026-11-10', 'Beli Material Medis', 'Pembelian Lightbar Strobo & Stretcher Ambulance', 0, 21000000, 44350000, 'NOTA-MED-04', 'Admin D'],
+    ['TRX-006', '2026-11-15', 'Upah Tenaga Kerja', 'Upah Mingguan Welder & Teknisi Karoseri', 0, 8500000, 35850000, 'SLIP-UPAH-W2', 'Admin D']
   ]);
 
   // 4. HPP PRODUKSI KAROSERI
@@ -316,7 +316,7 @@ function initSheets() {
       70000000,
       54.8,
       'Dalam Pengerjaan',
-      'Budi Santoso'
+      'Admin D'
     ]
   ]);
 
@@ -351,7 +351,7 @@ function initSheets() {
       '4. Waktu pengerjaan karoseri 14 - 21 hari kerja setelah chassis dan DP diterima di workshop.\n' +
       '5. Sudah termasuk penerbitan SRUT (Surat Rancang Bangun Uji Tipe) resmi Dishub/Kemenhub.',
       'Disetujui',
-      'Maya Kartika'
+      'Admin E'
     ]
   ]);
 
@@ -382,7 +382,7 @@ function initSheets() {
       'Lunas',
       'Transfer Bank BCA',
       'Bank BCA No. Rek: 8820917881 an PT RADINA ADI NILARAYA',
-      'Maya Kartika'
+      'Admin E'
     ],
     [
       'INV-RAN-2026-002',
@@ -406,7 +406,7 @@ function initSheets() {
       'Belum Bayar',
       'Transfer Bank BCA',
       'Bank BCA No. Rek: 8820917881 an PT RADINA ADI NILARAYA',
-      'Maya Kartika'
+      'Admin E'
     ]
   ]);
 
@@ -425,11 +425,11 @@ function initSheets() {
   setupSheet(ss, 'Admins', [
     'id', 'name', 'email', 'role', 'status', 'phone', 'avatar'
   ], [
-    ['ADM-1', 'Suhadi', 'suhadi@karoseriradina.com', 'Owner', 'Aktif', '0812-8820-9178', 'SH'],
-    ['ADM-2', 'Hj. Radina', 'radina@karoseriradina.com', 'Owner', 'Aktif', '0813-1122-3344', 'RD'],
-    ['ADM-3', 'Ahmad Fauzi', 'inventory@karoseriradina.com', 'Staff Inventory', 'Aktif', '0814-5566-7788', 'AF'],
-    ['ADM-4', 'Budi Santoso', 'hpp@karoseriradina.com', 'Staff HPP', 'Aktif', '0815-9988-1122', 'BS'],
-    ['ADM-5', 'Maya Kartika', 'invoice@karoseriradina.com', 'Staff Invoice', 'Aktif', '0816-3344-5566', 'MK']
+    ['ADM-1', 'Admin A', 'admin.a@asakaroseri.com', 'Owner', 'Aktif', '0812-0000-0001', 'A'],
+    ['ADM-2', 'Admin B', 'admin.b@asakaroseri.com', 'Owner', 'Aktif', '0812-0000-0002', 'B'],
+    ['ADM-3', 'Admin C', 'admin.c@asakaroseri.com', 'Staff Inventory', 'Aktif', '0812-0000-0003', 'C'],
+    ['ADM-4', 'Admin D', 'admin.d@asakaroseri.com', 'Staff HPP', 'Aktif', '0812-0000-0004', 'D'],
+    ['ADM-5', 'Admin E', 'admin.e@asakaroseri.com', 'Staff Invoice', 'Aktif', '0812-0000-0005', 'E']
   ]);
 
   return {

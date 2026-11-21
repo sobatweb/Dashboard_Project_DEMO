@@ -16,57 +16,57 @@ import type {
 export const initialAdmins: AdminUser[] = [
   {
     id: 'ADM-1',
-    name: 'Ir. Hendra Pratama',
-    email: 'hendra.pratama@asakaroseri.com',
+    name: 'Admin A',
+    email: 'admin.a@asakaroseri.com',
     role: 'Owner',
     roleTitle: 'Pemilik / Direktur Utama',
     status: 'Aktif',
-    phone: '0812-9876-5432',
-    avatar: 'HP',
+    phone: '0812-0000-0001',
+    avatar: 'A',
     allowedTabs: ['overview', 'stok', 'ledger', 'labarugi', 'hpp', 'quotation', 'invoice', 'anggaran', 'admins', 'settings']
   },
   {
     id: 'ADM-2',
-    name: 'Hj. Nur Hasanah',
-    email: 'nur.hasanah@asakaroseri.com',
+    name: 'Admin B',
+    email: 'admin.b@asakaroseri.com',
     role: 'Owner',
     roleTitle: 'Pemilik / Komisaris Utama',
     status: 'Aktif',
-    phone: '0813-8899-7711',
-    avatar: 'NH',
+    phone: '0812-0000-0002',
+    avatar: 'B',
     allowedTabs: ['overview', 'stok', 'ledger', 'labarugi', 'hpp', 'quotation', 'invoice', 'anggaran', 'admins', 'settings']
   },
   {
     id: 'ADM-3',
-    name: 'Ahmad Fauzi',
-    email: 'gudang@asakaroseri.com',
+    name: 'Admin C',
+    email: 'admin.c@asakaroseri.com',
     role: 'Staff Inventory',
     roleTitle: 'Staff Gudang & Material',
     status: 'Aktif',
-    phone: '0814-5566-7788',
-    avatar: 'AF',
+    phone: '0812-0000-0003',
+    avatar: 'C',
     allowedTabs: ['stok']
   },
   {
     id: 'ADM-4',
-    name: 'Budi Santoso',
-    email: 'produksi@asakaroseri.com',
+    name: 'Admin D',
+    email: 'admin.d@asakaroseri.com',
     role: 'Staff HPP',
     roleTitle: 'Staff Estimator & HPP Produksi',
     status: 'Aktif',
-    phone: '0815-9988-1122',
-    avatar: 'BS',
+    phone: '0812-0000-0004',
+    avatar: 'D',
     allowedTabs: ['hpp']
   },
   {
     id: 'ADM-5',
-    name: 'Maya Kartika',
-    email: 'finance@asakaroseri.com',
+    name: 'Admin E',
+    email: 'admin.e@asakaroseri.com',
     role: 'Staff Invoice',
     roleTitle: 'Staff Penagihan & SPH',
     status: 'Aktif',
-    phone: '0816-3344-5566',
-    avatar: 'MK',
+    phone: '0812-0000-0005',
+    avatar: 'E',
     allowedTabs: ['quotation', 'invoice']
   }
 ];
@@ -103,7 +103,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 0,
     saldo: 6500000,
     bukti_nota: 'CR000001',
-    pic_admin: 'Maya Kartika'
+    pic_admin: 'Admin E'
   },
   {
     id_transaksi: 'TRX-2026-002',
@@ -116,7 +116,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 1300000,
     saldo: 5200000,
     bukti_nota: 'CD000001',
-    pic_admin: 'Ahmad Fauzi'
+    pic_admin: 'Admin C'
   },
   {
     id_transaksi: 'TRX-2026-003',
@@ -129,7 +129,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 850000,
     saldo: 4350000,
     bukti_nota: 'CD000002',
-    pic_admin: 'Budi Santoso'
+    pic_admin: 'Admin D'
   },
 
   // Akun: 1100-00-020 Kas
@@ -144,7 +144,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 0,
     saldo: 25000000,
     bukti_nota: 'SA000001',
-    pic_admin: 'Maya Kartika'
+    pic_admin: 'Admin E'
   },
   {
     id_transaksi: 'TRX-2026-005',
@@ -157,7 +157,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 4500000,
     saldo: 20500000,
     bukti_nota: 'PA000001',
-    pic_admin: 'Ahmad Fauzi'
+    pic_admin: 'Admin C'
   },
 
   // Akun: 1200-00-010 Bank
@@ -172,7 +172,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 0,
     saldo: 75000000,
     bukti_nota: 'CR000006',
-    pic_admin: 'Ir. Hendra Pratama'
+    pic_admin: 'Admin A'
   },
   {
     id_transaksi: 'TRX-2026-007',
@@ -185,7 +185,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 0,
     saldo: 116625000,
     bukti_nota: 'CR000007',
-    pic_admin: 'Maya Kartika'
+    pic_admin: 'Admin E'
   },
   {
     id_transaksi: 'TRX-2026-008',
@@ -198,7 +198,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 22125000,
     saldo: 94500000,
     bukti_nota: 'CD000010',
-    pic_admin: 'Ahmad Fauzi'
+    pic_admin: 'Admin C'
   },
   {
     id_transaksi: 'TRX-2026-009',
@@ -211,7 +211,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 4750000,
     saldo: 89750000,
     bukti_nota: 'CD000011',
-    pic_admin: 'Ir. Hendra Pratama'
+    pic_admin: 'Admin A'
   },
   {
     id_transaksi: 'TRX-2026-010',
@@ -224,7 +224,7 @@ export const initialLedger: LedgerItem[] = [
     kas_keluar: 9600000,
     saldo: 80150000,
     bukti_nota: 'CD000012',
-    pic_admin: 'Budi Santoso'
+    pic_admin: 'Admin D'
   }
 ];
 
@@ -358,7 +358,7 @@ export const initialMutasi: MutasiStokItem[] = [
     jenis_mutasi: 'Masuk',
     jumlah: 30,
     keterangan: 'Penerimaan stok dari supplier PT Steel Utama',
-    pj_admin: 'Ahmad Fauzi'
+    pj_admin: 'Admin C'
   },
   {
     id: 'MUT-002',
@@ -368,7 +368,7 @@ export const initialMutasi: MutasiStokItem[] = [
     jenis_mutasi: 'Terpakai',
     jumlah: 6,
     keterangan: 'Fabrikasi Ambulance VIP (PT Medika Nusantara)',
-    pj_admin: 'Budi Santoso'
+    pj_admin: 'Admin D'
   },
   {
     id: 'MUT-003',
@@ -378,7 +378,7 @@ export const initialMutasi: MutasiStokItem[] = [
     jenis_mutasi: 'Terpakai',
     jumlah: 15,
     keterangan: 'Rangka dinding dan partisi plafon ambulance',
-    pj_admin: 'Budi Santoso'
+    pj_admin: 'Admin D'
   }
 ];
 
@@ -482,7 +482,7 @@ export const initialHPP: HPPItem[] = [
     target_jual: 75000000,
     margin_persen: 18.9,
     status_produksi: 'Dalam Pengerjaan',
-    pic_admin: 'Budi Santoso'
+    pic_admin: 'Admin D'
   }
 ];
 
@@ -523,8 +523,8 @@ export const initialQuotations: QuotationItem[] = [
       '4. Waktu pengerjaan karoseri 14 - 21 hari kerja setelah chassis dan DP diterima di workshop PT Asa Karoseri.\n' +
       '5. Sudah termasuk sertifikat SRUT resmi dari Kementerian Perhubungan RI.',
     status: 'Disetujui',
-    admin_pembuat: 'Maya Kartika',
-    penandatangan: 'Ir. Hendra Pratama',
+    admin_pembuat: 'Admin E',
+    penandatangan: 'Admin A',
     jabatan_penandatangan: 'Direktur Utama'
   }
 ];
@@ -558,7 +558,7 @@ export const initialInvoices: InvoiceItem[] = [
     status_bayar: 'Lunas',
     metode_bayar: 'Transfer Bank BCA',
     catatan_rekening: 'Bank BCA No. Rek: 7890-123-456 a/n PT ASA KAROSERI',
-    admin_pembuat: 'Maya Kartika'
+    admin_pembuat: 'Admin E'
   },
   {
     nomor_inv: 'INV-ASA-2026-002',
@@ -585,7 +585,7 @@ export const initialInvoices: InvoiceItem[] = [
     status_bayar: 'Belum Bayar',
     metode_bayar: 'Transfer Bank BCA',
     catatan_rekening: 'Bank BCA No. Rek: 7890-123-456 a/n PT ASA KAROSERI',
-    admin_pembuat: 'Maya Kartika'
+    admin_pembuat: 'Admin E'
   }
 ];
 

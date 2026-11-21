@@ -104,10 +104,19 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isConnected, setIsConnected] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  // Initialize Admins PT Asa Karoseri (v3)
+  // Initialize Admins PT Asa Karoseri (v4 - dummy names)
   const [admins, setAdmins] = useState<AdminUser[]>(() => {
-    const saved = localStorage.getItem('asa_admins_v3');
-    return saved ? JSON.parse(saved) : initialAdmins;
+    try {
+      const saved = localStorage.getItem('asa_admins_v4');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        const hasRealName = parsed.some((a: AdminUser) => 
+          /Hendra|Nur Hasanah|Ahmad Fauzi|Budi Santoso|Maya Kartika|Suhadi|Radina/i.test(a.name)
+        );
+        if (!hasRealName && Array.isArray(parsed) && parsed.length) return parsed;
+      }
+    } catch {}
+    return initialAdmins;
   });
 
   const [currentAdmin, setCurrentAdminState] = useState<AdminUser>(() => admins[0] || initialAdmins[0]);
@@ -184,7 +193,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   };
 
   // Sync state ke LocalStorage
-  useEffect(() => { localStorage.setItem('asa_admins_v3', JSON.stringify(admins)); }, [admins]);
+  useEffect(() => { localStorage.setItem('asa_admins_v4', JSON.stringify(admins)); }, [admins]);
   useEffect(() => { localStorage.setItem('asa_accounts_v3', JSON.stringify(accountCodeList)); }, [accountCodeList]);
   useEffect(() => { localStorage.setItem('asa_stok_v3', JSON.stringify(stokList)); }, [stokList]);
   useEffect(() => { localStorage.setItem('asa_mutasi_v3', JSON.stringify(mutasiList)); }, [mutasiList]);

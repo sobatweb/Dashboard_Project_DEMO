@@ -159,7 +159,7 @@ export const AdminPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="py-3 px-3 font-bold text-slate-800 border-r border-slate-200">3. Staff Inventory</td>
-                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Ahmad Fauzi</td>
+                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Admin C</td>
                 <td className="py-3 px-3 text-emerald-700 font-bold border-r border-slate-200">✓ Kelola Stok & Mutasi</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
@@ -169,7 +169,7 @@ export const AdminPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="py-3 px-3 font-bold text-slate-800 border-r border-slate-200">4. Staff HPP</td>
-                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Budi Santoso</td>
+                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Admin D</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
                 <td className="py-3 px-3 text-blue-700 font-bold border-r border-slate-200">✓ Hitung Costing HPP</td>
@@ -179,7 +179,7 @@ export const AdminPage: React.FC = () => {
               </tr>
               <tr>
                 <td className="py-3 px-3 font-bold text-slate-800 border-r border-slate-200">5. Staff Invoice</td>
-                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Maya Kartika</td>
+                <td className="py-3 px-3 font-medium text-slate-800 border-r border-slate-200">Admin E</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>
                 <td className="py-3 px-3 text-slate-400 border-r border-slate-200">✕ Terkunci (No Access)</td>

@@ -7,11 +7,11 @@ Panduan ini disusun dengan instruksi yang sangat jelas, ramah untuk semua kalang
 ---
 
 ## 👥 Struktur 5 Pengguna & Hak Akses
-1. **Suhadi** - Direktur Utama *(Owner - Akses Penuh ke Semua Menu & Laba/Rugi)*
-2. **Hj. Radina** - Komisaris Utama *(Owner - Akses Penuh ke Semua Menu & Laba/Rugi)*
-3. **Ahmad Fauzi** - Staff Gudang *(Staff Inventory - Khusus Stok Barang & Mutasi Material)*
-4. **Budi Santoso** - Staff Produksi Karoseri *(Staff HPP - Khusus Kalkulasi HPP Produksi & Stok)*
-5. **Maya Kartika** - Staff Administrasi Keuangan *(Staff Invoice - Khusus Surat Penawaran SPH & Cetak Invoice)*
+1. **Admin A** - Direktur Utama *(Owner - Akses Penuh ke Semua Menu & Laba/Rugi)*
+2. **Admin B** - Komisaris Utama *(Owner - Akses Penuh ke Semua Menu & Laba/Rugi)*
+3. **Admin C** - Staff Gudang *(Staff Inventory - Khusus Stok Barang & Mutasi Material)*
+4. **Admin D** - Staff Produksi Karoseri *(Staff HPP - Khusus Kalkulasi HPP Produksi & Stok)*
+5. **Admin E** - Staff Administrasi Keuangan *(Staff Invoice - Khusus Surat Penawaran SPH & Cetak Invoice)*
 
 ---
 

@@ -7,11 +7,9 @@ import {
   Check, 
   ChevronDown,
   Menu,
-  X,
-  Truck
+  X
 } from 'lucide-react';
 import { APP_CONFIG } from '../config';
-import logos from '../assets/logos.png';
 
 export const Navbar: React.FC = () => {
   const { 
@@ -46,7 +44,7 @@ export const Navbar: React.FC = () => {
 
           {/* Logo PT. Asa Karoseri */}
           <div className="flex items-center gap-3">
-            <img src={logos} alt="PT. Asa Karoseri" className="w-10 h-10 rounded-lg object-cover" />
+            <img src="/logos.png" alt="PT. Asa Karoseri" className="w-10 h-10 rounded-lg object-contain bg-white border border-slate-200 p-0.5 shadow-xs" />
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-black text-base sm:text-lg tracking-tight text-slate-900 leading-tight">

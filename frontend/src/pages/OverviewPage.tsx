@@ -45,16 +45,19 @@ export const OverviewPage: React.FC = () => {
       {/* Header Banner - Bersih & Soft (60-30-10) */}
       <div className="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <div className="inline-block px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-bold uppercase mb-2 border border-slate-200">
-              {APP_CONFIG.COMPANY_NAME} • {APP_CONFIG.COMPANY_TAGLINE}
+          <div className="flex items-start gap-4">
+            <img src="/logos.png" alt={APP_CONFIG.COMPANY_NAME} className="w-14 h-14 rounded-2xl object-contain border border-slate-200 p-1 bg-white shadow-xs shrink-0 hidden sm:block" />
+            <div>
+              <div className="inline-block px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-bold uppercase mb-2 border border-slate-200">
+                {APP_CONFIG.COMPANY_NAME} • {APP_CONFIG.COMPANY_TAGLINE}
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                Ringkasan Operasional & Keuangan
+              </h2>
+              <p className="text-slate-600 text-xs sm:text-sm mt-1 font-medium">
+                Selamat datang, <strong>{currentAdmin.name}</strong> ({currentAdmin.roleTitle}).
+              </p>
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-              Ringkasan Operasional & Keuangan
-            </h2>
-            <p className="text-slate-600 text-xs sm:text-sm mt-1 font-medium">
-              Selamat datang, <strong>{currentAdmin.name}</strong> ({currentAdmin.roleTitle}).
-            </p>
           </div>
 
           <div className="flex flex-wrap gap-2.5">

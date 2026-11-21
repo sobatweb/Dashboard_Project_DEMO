@@ -36,6 +36,7 @@ export const LabaRugiPage: React.FC = () => {
         
         {/* Header Report */}
         <div className="text-center pb-6 mb-6 border-b border-slate-200">
+          <img src="/logos.png" alt={APP_CONFIG.COMPANY_NAME} className="w-16 h-16 mx-auto mb-3 object-contain" />
           <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight">
             {APP_CONFIG.COMPANY_NAME}
           </h3>

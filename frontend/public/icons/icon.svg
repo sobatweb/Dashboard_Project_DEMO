@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="100" fill="#1e293b"/>
-  <rect x="24" y="24" width="464" height="464" rx="80" fill="none" stroke="#3b82f6" stroke-width="12"/>
-  <path d="M256 100 L390 380 L330 380 L295 300 L217 300 L182 380 L122 380 Z M256 190 L230 250 L282 250 Z" fill="#ffffff"/>
-  <text x="256" y="445" font-family="system-ui, sans-serif" font-size="46" font-weight="900" fill="#60a5fa" text-anchor="middle" letter-spacing="4">ASA KAROSERI</text>
-</svg>

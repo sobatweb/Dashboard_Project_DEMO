@@ -3,7 +3,6 @@ import { useApp } from '../context/AppContext';
 import { 
   Settings, 
   Check, 
-  Building2, 
   Database, 
   RefreshCw,
   CreditCard,
@@ -60,9 +59,12 @@ export const SettingsPage: React.FC = () => {
         {/* Kolom Kiri: Profil Resmi Perusahaan */}
         <div className="lg:col-span-2 space-y-5">
           <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
-            <div className="flex items-center gap-2.5 pb-3 border-b border-slate-100">
-              <Building2 className="w-5 h-5 text-blue-600" />
-              <h3 className="font-bold text-slate-900 text-sm sm:text-base">Identitas & Legalitas PT. Asa Karoseri</h3>
+            <div className="flex items-center gap-3.5 pb-3 border-b border-slate-100">
+              <img src="/logos.png" alt={APP_CONFIG.COMPANY_NAME} className="w-12 h-12 rounded-xl object-contain border border-slate-200 p-1 bg-white shadow-xs" />
+              <div>
+                <h3 className="font-bold text-slate-900 text-sm sm:text-base">Identitas & Legalitas {APP_CONFIG.COMPANY_NAME}</h3>
+                <p className="text-xs text-slate-500 font-medium">Logo dan profil resmi operasional perusahaan</p>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
